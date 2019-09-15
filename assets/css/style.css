@@ -1,0 +1,805 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+   Google fonts
+==========================================
+*/
+
+/*font-family: 'Raleway', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+/*
+==========================================
+   Header
+==========================================
+*/
+
+html ,
+body {
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+.section-padding {
+    padding: 80px 0;
+}
+.section-header h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.section-header h2 span {
+    color: #ff0000;
+}
+.section-header h2:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 170px;
+    top: 100%;
+    left: 38%;
+    margin-top: 8px;
+    margin-left: 55px;
+    background: #ff0000;
+}
+.section-header h2:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 100%;
+    border-radius: 50px;
+    background: #ff0000;
+    margin-left: -8px;
+    left: 49%;
+}
+.content-top-space {
+    margin-top: 70px;
+}
+
+/*
+=====================
+    Header-main
+=====================
+*/
+.header-main {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+.header-main:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    left: 0;
+    z-index: -1;
+    opacity: .49;
+    background: #393838;
+    top: 0;
+}
+nav.main-menu ul li{
+    float: left;
+    margin-left: 26px;
+}
+nav.main-menu ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 38px 0;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    transform: .5s
+}
+nav.main-menu ul li a:hover {
+    color: #fe320a;
+}
+nav.main-menu ul {
+    float: right;
+}
+.logo img{
+    margin-top: 15px;
+}
+/*
+=====================
+    Header img
+=====================
+*/
+.header-img {
+    background: url('../img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+}
+.header-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    opacity: .42;
+    z-index: -1;
+}
+.d-table {
+    display: table;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.header-img .container ,
+.header-img .row ,
+.header-img .col-md-12 {
+    height: 100%;
+}
+.header-content {
+    color: #fff;
+    margin-top: 95px;
+}
+.header-content h1 span{
+    color: #fe320a;
+    font-weight: 700;
+}
+.header-content p {
+    max-width: 850px;
+    margin: 22px auto 35px auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+.header-content a{
+    text-decoration: none;
+    color: #fff;
+    background: #fe320a;
+    font-family: 'Raleway', sans-serif;
+    padding: 9px 32px;
+    transform: .3s;
+    font-size: 20px;
+    display: inline-block;
+}
+.header-content a:hover {
+    background: #fff;
+    color: #fe320a;
+}
+/*
+=====================
+ About Section
+=====================
+*/
+.nandine-about {
+    background: #f6f6f6;
+}
+.about-left img {
+    width: 100%;
+    height: auto;
+}
+.about-left {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+.about-left .about-left-details {
+    position: absolute;
+    border: 0;
+    width: 100%;
+    z-index: 1;
+}
+.about-left .about-left-details:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .70;
+    background: #252525;
+    z-index: -1;
+}
+.about-left-details h4 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.about-left-details ul li {
+    display: inline;
+}
+.about-left-details ul li a {
+    display: inline-block;
+}
+.about-left-details ul li a {
+    font-size: 18px;
+    color: #fff;
+    background: #252525;
+    padding: 5px;
+    margin: 3px;
+    transition:.5s;
+    height: 40px;
+    width: 40px;
+    border-radius:50px;   
+}
+.about-left-details {
+    padding: 12px 0;
+}
+.about-left-details ul {
+    margin-top: 6px;
+}
+.about-left-details ul li a:hover{
+    background: #fff;
+    color: #252525;
+}
+
+/*about */
+
+    .about-right h3 {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Raleway', sans-serif;
+    }
+.about-right p {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    margin-top: 45px;
+    color: #1e1e1e;     
+}
+.about-right p strong {
+    color: #545454;
+}
+.about-right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 22px;
+    transition: .5s;
+    margin-top: 30px;
+    display: inline-block;
+    border: 1px solid #ff0000;
+    background: #ff0000; 
+}
+.about-right a:hover {
+    background: #fff;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+/*
+=====================
+ About Section
+=====================
+*/
+
+.video-area {
+    background: url('../img/video-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    background-attachment: fixed;
+}
+.video-area:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    z-index: -1;
+    opacity:.60;
+    left: 0;
+}
+.video-area h2 {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.video-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    height: 95px;
+    width: 95px;
+    transition: .5s;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 85px;
+    border: 2px solid #fff;
+    margin-top: 40px;
+}
+.video-icon a:hover {
+    background: #fff;
+    color: #ff0000;
+}
+/*
+=====================
+ Services Section
+=====================
+*/
+.services-box {
+    margin-top: 70px;
+}
+
+.services-box i {
+   color: #ff0000;
+    font-size: 48px;
+}
+.services-box h4 {
+    font-size: 24px;
+    color: #151515;
+    margin: 15px 0;
+    font-family: 'Raleway', sans-serif;
+}
+.services-box p {
+    line-height: 24px;
+    color: #252525;
+}
+/*
+=====================
+ Skill Section
+=====================
+*/
+.skill {
+    background: #f3f3f3;
+}
+.skill-left h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: 151515;
+}
+.skill-left p {
+    font-weight: 300;
+    color: #515151;
+    margin-top: 20px;
+    line-height: 26px;
+}
+.skill-left p:last-child {
+    margin-top: 30px;
+}
+.skill-right h3 {
+    font-size: 24px;
+    color: #1b1b1b;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.skill-right p {
+    font-weight: 300;
+    color: #2c2b2b;
+     font-family: 'Raleway', sans-serif;
+    line-height: 26px;
+    margin-top: 18px;
+  } 
+.nandine-skill-bar p {
+    margin-top: 0;
+}
+
+.nandine-skill-bar .skillbar {
+    background: #000;
+    height: 0;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 10px 25px;
+}
+.nandine-skill-bar .filled {
+    background: #ff0000 !important;
+    height: 10px;
+    top: 5.1px;
+    position: absolute;
+    border-radius: 42px;
+    left: 4px;
+}
+.nandine-skill-bar span.percent {
+    color: #fff;
+    top: -8px;
+    position: absolute;
+}
+h5.skill-bar-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #2c2b2b;
+    font-weight: 400;
+    margin-bottom: -5px;
+    margin-top: 14px;
+    margin-bottom: -5px;
+}
+/*Plugin CSS CODE*/
+/*
+    * Plugin :  an-skill-bar
+    * Version: 1.0.1
+    * Description: A plugin that fills bars with a percentage you set.
+    * Author: Hasan Misbah
+    * Copyright 2018, Hasan Misbah
+    * Free to use and abuse under the MIT license.
+    * http://www.opensource.org/licenses/mit-license.php
+    */.skillbar{width:100%;padding:10px;margin:10px 0;position:relative;display:block;overflow:hidden;height:30px;background-color:#fff;border-radius:5px 0 0 5px}.skillbar.html .title{background-color:#c96300}.skillbar.html .filled{background-color:#ff8817}.skillbar.css .title{background-color:#0f5487}.skillbar.css .filled{background-color:#177fcb}.skillbar.js .title{background-color:#f0b109}.skillbar.js .filled{background-color:#f8ca4d}.skillbar.php .title{background-color:#3d4670}.skillbar.php .filled{background-color:#5864a2}.skillbar.jquery .title{background-color:#064a7a}.skillbar.jquery .filled{background-color:#0977c3}.skillbar.sass .title{background-color:#ba437d}.skillbar.sass .filled{background-color:#cf7aa4}.skillbar.less .title{background-color:#1f3861}.skillbar.less .filled{background-color:#31599b}.skillbar.react .title{background-color:#33c7f0}.skillbar.react .filled{background-color:#7adbf5}.skillbar.nodejs .title{background-color:#5e8f35}.skillbar.nodejs .filled{background-color:#83bf51}.skillbar.angular .title{background-color:#8f0023}.skillbar.angular .filled{background-color:#dc0035}.skillbar.vue .title{background-color:#2f8f67}.skillbar.vue .filled{background-color:#47c390}.skillbar.meteor .title{background-color:#cc2b2c}.skillbar.meteor .filled{background-color:#de6566}.skillbar.backbone .title{background-color:#005086}.skillbar.backbone .filled{background-color:#007dd3}.skillbar.ember .title{background-color:#c63d2d}.skillbar.ember .filled{background-color:#dc7064}.skillbar.mysql .title{background-color:#003e58}.skillbar.mysql .filled{background-color:#0073a5}.skillbar.python .title{background-color:#295479}.skillbar.python .filled{background-color:#3d7cb2}.skillbar.django .title{background-color:#010705}.skillbar.django .filled{background-color:#0e4731}.skillbar.agile .title{background-color:#198cb7}.skillbar.agile .filled{background-color:#37b6e4}.skillbar.photoshop .title{background-color:#211a56}.skillbar.photoshop .filled{background-color:#382c90}.skillbar.illustrator .title{background-color:#572e11}.skillbar.illustrator .filled{background-color:#98511d}.skillbar.indesign .title{background-color:#a42b69}.skillbar.indesign .filled{background-color:#d04c8f}.skillbar.laravel .title{background-color:#f0280f}.skillbar.laravel .filled{background-color:#f56856}.skillbar .title{background-color:rgba(0,0,0,.6);height:30px;width:85px;text-align:center;left:0;color:#f0f0f0;border-radius:5px 0 0 5px}.skillbar .percent,.skillbar .title{padding:5px;position:absolute;top:0;z-index:9}.skillbar .percent{right:0;color:#000;font-weight:700}.skillbar .filled{z-index:8;position:absolute;top:0;left:0;background-color:rgba(0,80,80,.3);height:100%;width:20px;border-radius:5px 0 0 5px}
+/*# sourceMappingURL=an-skill-bar.css.map */
+/*
+=====================
+ Counter Section
+=====================
+*/
+.counter {
+    background: url(../img/counter.bg.jpg);
+    background-color: rgba(0 ,0 ,0, 0;);
+    background-color: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    background-attachment: fixed;
+    
+}
+.counter:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    z-index: -1;
+}
+.counter-box i {
+    font-size: 22px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    line-height: 48px;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 6px;
+}
+.counter-number {
+    font-size: 30px;
+    font-weight: 600;
+}
+.counter-name {
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+/*
+=====================
+portfolio Section
+=====================
+*/
+
+.portfolio-menu {
+    text-align: center;
+}
+.portfolio-menu button {
+    background: transparent;
+    border: 0;
+    color: #3c3c3c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    transition: .3s;
+}
+.portfolio-menu button:hover {
+    color: #ff0000;
+}
+.protfolio-item {
+    margin-top: 36px;
+    position: relative;
+    transition: .5s;
+}
+button.mixitup-control-active {
+    color: #ff0000;
+}
+.protfolio-item img {
+    max-width: 100%;
+}
+.protfolio-item:hover .portfolio-item-hover {
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio-item-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background: #ff000087;
+    justify-content: center;
+    transition: .3s;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+.portfolio-item-hover a {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+/*
+=====================
+Team Section
+=====================
+*/
+.team {
+    background: #e1e1e1;
+}
+.team-item {
+    position: relative;
+}
+.team-item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.team-item-hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    width: 100%;
+    height: 100%;
+    opacity: .0;
+    z-index: -1;
+    visibility: hidden;
+    transition: .5s;
+}
+.team-item:hover .team-item-hover:after {
+    visibility: visible;
+    opacity: .44;
+} 
+.team-hover-content {
+    background: red;
+    position: absolute;
+    width: 100%;
+    bottom: -67px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+}
+.team-item:hover .team-hover-content {
+    bottom: 0;
+}
+h4.team-name {
+    text-transform: uppercase;
+}
+.team-hover-content ul li {
+    display: inline;
+}
+.team-hover-content ul li a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.team-hover-content {
+    padding: 10px 0;
+}
+
+/*
+=====================
+testimonial Section
+=====================
+*/
+.testimonial {
+    background: url(../img/testbg.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #f1e1e1;
+    background-attachment: fixed;
+}
+.testimonial:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background: #000;
+    z-index: -1;
+}
+.owl-carousel-testimonial img {
+    width: auto !important;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.owl-carousel-testimonial .item {
+    text-align: center;
+}
+h4.testimonial-name {
+    text-transform: uppercase;
+    font-size: 18px;
+    grid-auto-rows: 12px 0;
+    margin-top: 10px;
+}
+/*
+=====================
+Blog Section
+=====================
+*/
+.blog-item {
+    box-shadow: 0 0 15px #ece9e9;
+}
+.blog-item img {
+    max-width: 100%;
+    border-bottom: 10px solid #464646;
+}
+article.blog-details {
+    padding: 19px 20px;
+}
+h2.blog-title {
+    font-size: 24px;
+    color: #433f3f;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+article.blog-details .date {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+article.blog-details p {
+    line-height: 24px;
+    color: #433f3f;
+}
+a.blog-button {
+    text-decoration: none;
+    background: #252525;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 12px;
+    display: inline-block;
+    transition: .5s;
+    margin-top: 14px;
+    break-before: 1px solid #252525;
+}
+a.blog-button:hover {
+    background: transparent;
+    color: red;
+    
+}
+/*
+=====================
+Contact Section
+=====================
+*/
+.contact {
+    background: url(../img/contact.bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    z-index: 0;
+    color: #fff;
+    background-attachment: fixed;
+}
+.contact:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #000;
+    z-index: -1;
+    opacity: .55;
+}
+.contact input {
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 25px;
+    height: 42px;
+}
+.contact textarea {
+    background: transparent;
+    border: 1px solid #fff;
+    height: 180px;
+    margin-bottom: 25px;
+    padding-top: 20px;
+}
+.contact button {
+    background: #ff0000;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 32px;
+    transition: .5s;
+}
+.contact button:hover {
+    background: #fff;
+    color: #ff0000;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #fff;
+} 
+
+/*
+=====================
+Contact Section
+=====================
+*/
+footer.footer {
+    background: #121111;
+    color: #fff;
+    padding: 30px 0;
+}
+.footer-icon ul li {
+    float: left;
+    margin-right: 15px;
+}
+.footer-icon ul li:last-child {
+    margin-right: 0;
+}
+.footer-icon ul li a {
+    color: #fff;
+}
+
+/*Responsive Menu css*/
+nav.navbar.navbar-expand-lg.main-menu {
+    padding: 0;
+}
+nav.main-menu ul {
+    margin-left: auto;
+}
+button.navbar-toggler.collapsed i {
+    background: #000;
+    color: #fff;
+    padding: 7px 16px;
+}
